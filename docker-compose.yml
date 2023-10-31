@@ -1,0 +1,13 @@
+version: '3'
+services:
+  lyristv2:
+    build: .
+    restart: unless-stopped
+    container_name: "lyrist"
+    image: lyrist:latest
+    expose:
+      - "3000"
+    ports:
+      - "1001:3000"
+    volumes:
+      - ./:/app
