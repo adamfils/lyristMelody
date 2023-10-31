@@ -1,6 +1,6 @@
 version: '3'
 services:
-  lyristv2:
+  lyrist:
     build: .
     restart: unless-stopped
     container_name: "lyrist"
